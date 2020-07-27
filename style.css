@@ -1,0 +1,9 @@
+.btn{
+    background-color: #9a10ab !important;
+    color: white !important;
+}
+
+.errorMsg{
+    background-color: red;
+    color: white;
+}

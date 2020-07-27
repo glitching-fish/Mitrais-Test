@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" 
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <script defer src="./script.js"></script>
+</head>
+<body>
+  <div class="card">
+    <div class="card-body">
+      <h2>Registration</h2>
+      <form id="formRegister">
+          <div class="form-group">
+              <div id="mobileCustomError" class="errorMsg"></div>
+              <input type="text" class="form-control" id="mobileNumber" placeholder="Mobile Number" >
+          </div>
+          <div class="form-group">
+              <div id="firstnameCustomError" class="errorMsg"></div>
+              <input type="text" class="form-control" id="firstName" placeholder="First Name" >
+          </div>
+          <div class="form-group">
+              <div id="lastnameCustomError" class="errorMsg"></div>
+              <input type="text" class="form-control" id="lastName" placeholder="Last Name" >
+          </div>
+          <div class="form-group">
+            <label>Date of Birth</label>
+            <div class="row">
+              <div class="col-6">
+                <div class="row">
+                  <div class="col-4">
+                    <select class="form-control" id="selectMonth">
+                      <option>Month</option>
+                    </select>
+                  </div>
+                  <div class="col-4">
+                    <select class="form-control" id="selectDate">
+                      <option>Date</option>
+                    </select>
+                  </div>
+                  <div class="col-4">
+                    <select class="form-control" id="selectYear">
+                      <option>Year</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+              <div class="col-6"></div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-6">
+              <div class="row pl-3">
+                <div class="col form-check">
+                  <input class="form-check-input" type="radio" name="radioGender" id="genderMale" value="Male">
+                  <label class="form-check-label" for="genderMale">
+                    Male
+                  </label>
+                </div>
+                <div class="col form-check">
+                  <input class="form-check-input" type="radio" name="radioGender" id="genderFemale" value="Female">
+                  <label class="form-check-label" for="genderFemale">
+                    Female
+                  </label>
+                </div>
+              </div>
+            </div>
+            <div class="col-6"></div>
+          </div>
+          <div class="form-group">
+            <input type="email" class="form-control" placeholder="Email" >
+          </div>
+          <button id="buttonRegister" type="submit" class="btn btn-block">Register</button>
+      </form>
+    </div>
+  </div>
+</body>
+</html>
+
